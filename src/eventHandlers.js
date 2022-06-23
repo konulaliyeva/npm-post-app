@@ -2,12 +2,13 @@ import { loginForm } from "./dom";
 import { username } from "./dom";
 import {password} from "./dom";
 import {loginBtn} from "./dom";
+import { alertBox } from "./dom";
 import {sendUserInfoRequest} from "./api";
 
-loginForm.addEventListener("submit", submitFormFn);
-
+const {username, password} =this.elements;
 async function submitFormFn(event){
     event.preventDefault();
+    alertBox.hidden = true;
     const requestedInfo = {
         username: username.value,
         password: password.value
@@ -17,9 +18,11 @@ async function submitFormFn(event){
     password.value = ""; 
 }
 loginBtn.onclick =function(){
-    if(username.value ==="" || password.value ==="")
-        return window.location.href("./index.html");
+    if(username.value ==="" || password.value ===""){
+        alertBox.hidden = false;
+        return location.href("./index.html");
+    }
 
-    return window.location.href("./posts.html");
+    return location.href("./posts.html");
 }
 
