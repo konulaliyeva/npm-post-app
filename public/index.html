@@ -64,12 +64,10 @@ body {
 .login-form{
         position: relative;
         left: 50%;
-        margin-top: 50%;
+        margin-top: 10%;
     }
 
-.register-form{
-        margin-top: 20%;
-    }
+
 }
 
 .login-main-text{
@@ -81,10 +79,17 @@ body {
 .login-main-text h2{
     font-weight: 300;
 }
+.form-control {
+    padding: 8px 20px;
+}
 
 .btn-login{
     background-color: #7c5295 !important;
     color: #fff;
+    position: relative;
+    left: 70%;
+    width: 100px;
+
     
 }
 .btn-login:hover{
@@ -92,11 +97,7 @@ body {
     color: #fff;
     
 }
-.btn-register{
-    background-color: #fff;
-    color: rgb(109, 109, 195);
-  
-}
+
 
 </style>
 <body>
@@ -114,16 +115,16 @@ body {
             <div id="alertBox" class="alert alert-danger" role="alert" hidden>
             Please, fill required fields!
             </div>        
-             <div class="form-group pb-3">
-                <label>Username</label>
-                <input id="username" type="text" class="form-control" placeholder="Username">
+             <div class="form-group p-3">
+                
+                <input id="post_title" type="text" class="form-control" placeholder="Your post title">
              </div>
-             <div class="form-group pb-3">
-                <label>Password</label>
-                <input id="password" type="password" class="form-control" placeholder="Password">
+
+             <div class="form-group p-3">
+                <textarea id="post_content" class="form-control" cols="30" rows="10" placeholder="Your post content"></textarea>
              </div>
-             <button id = "login_btn" type="submit" class="btn btn-login px-4">Login</button>
-             <button type="submit" class="btn btn-register">Register</button>
+           
+             <button id = "add_btn" type="submit" class="btn btn-login px-4">Add</button>
           </form>
        </div>
     </div>

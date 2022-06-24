@@ -1,5 +1,5 @@
-export const loginForm = document.getElementById("form");
-export const username = document.getElementById("username");
-export const password =document.getElementById("password");
-export const loginBtn =document.getElementById("login_btn");
+export const contentForm = document.getElementById("form");
+export const postTitle = document.getElementById("post_title");
+export const postContent =document.getElementById("post_content");
+export const addBtn =document.getElementById("add_btn");
 export const alertBox =document.getElementById("alertBox")
