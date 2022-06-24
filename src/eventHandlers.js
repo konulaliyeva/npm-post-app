@@ -10,14 +10,12 @@ export async function submitFormFn(event) {
     title: postTitle.value,
     content: postContent.value,
   };
-  await attachPost(requestedInfo);
-  postTitle.value = "";
-  postContent.value = "";
-}
-export function clickBtn() {
-  if (postTitle.value === "" || postContent.value === "") {
+  if (postTitle.value === '' || postContent.value === '') {
     alertBox.hidden = false;
+  } else {
+    await attachPost(requestedInfo);
+    postTitle.value = '';
+    postContent.value = '';
+    location.href = './posts.html';
   }
-
-  else{ location.href("./public/posts.html");}
 }
