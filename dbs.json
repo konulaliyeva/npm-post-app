@@ -1,6 +1,15 @@
 {
-  "users": [
-    
+  "posts": [
+    {
+      "id": "l4tt0l89",
+      "title": "Publish your article",
+      "content": "The fact of the matter is if you want your post read and shared, it’s got to be clicked.\n\nSo, how to make sure that happens? Your blog post title.\n\nThere are a few strategies to use that will make your writing more noticeable, create a catchy title, draw people’s attention.\n\nNow, let me guess, when you’ve tried to do this yourself, you’ve probably come across a bunch of blog post title generators and you think that it’s all you need to know about creating attention-grabbing headlines."
+    },
+    {
+      "id": "l4tt2hy8",
+      "title": "Travel around a world",
+      "content": "Sometimes we only need a little bit of inspiration to get started with writing an article and other times we need a lot. The main thing is that sometimes we just write and write and hope for the best afterwards. This is probably not the best approach or what you should strive for if you want to improve your travel blog and keep fresh content coming in. And topping it up with great well written blog post titles can help even more when trying to find new angles for your next piece of content."
+    }
   ],
   "comments": []
 }

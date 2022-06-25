@@ -1,8 +1,8 @@
 import { contentForm } from "./dom";
-import {addBtn} from "./dom";
-import { submitFormFn} from "./eventHandlers";
+import { submitFormFn, publishPost} from "./eventHandlers";
 
 
-
+publishPost();
+deletePost();
 contentForm.addEventListener("submit", submitFormFn);
 // addBtn.addEventListener("click", clickBtn);
