@@ -1,8 +1,12 @@
-import { contentForm } from "./dom";
-import { submitFormFn, publishPost} from "./eventHandlers";
+import { contentForm, commentForm } from "./dom";
+import { submitFormFn, publishPost,sendComment,deletePostItem, deletePostItem } from "./eventHandlers";
 
 
 publishPost();
-deletePost();
 contentForm.addEventListener("submit", submitFormFn);
 // addBtn.addEventListener("click", clickBtn);
+
+commentForm.addEventListener("submit", sendComment);
+// console.log(deleteBtn);
+
+deletePostItem();

@@ -56,8 +56,11 @@
         border-radius: 10px;
         border: 1px solid rgb(139, 139, 139);
     }
-    .btn-trash-edit{
+    .delete_btn{
         height: 30px;
+    }
+    .hideDiv{
+      opacity: 0;
     }
   </style>
   <body>
@@ -74,7 +77,28 @@
           <input
             class="search_input"
             type="text"
-            placeholder="Search for post"/></div>
+            placeholder="Search for post"/>
+         </div>
+         <div class="single_post mt-5 d-flex justify-content-center">
+          <div class="single_post_right">
+            <h2>${post.title}</h2>
+            <p class="pb-2 pt-4">
+              ${post.content}
+            </p>
+            <div class="reaction_comments d-flex justify-content-between align-items-baseline me-5">
+                <button class="btn mb-3 me-4"> 12 comments</button>
+                <button class="btn"><i class="fa-solid fa-thumbs-up pe-2"></i>7</button>
+        
+            </div>
+             <form id="comment_form" class="d-flex justify-content-between mt-3 align-items-baseline">
+                <input class="input_comment pt-2 pb-2 px-4 mb-4" type="text" placeholder="Add a comment" />
+            </form>
+            </div>
+          <div class="single_post_left d-flex flex-direction-row">
+            <button class="btn delete_btn"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
   <script src="./bundle.js"></script>
